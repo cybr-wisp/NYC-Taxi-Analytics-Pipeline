@@ -1,0 +1,39 @@
+@'
+# Secrets / credentials
+.env
+config/gcp-key.json
+config/*.json
+*.pem
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Airflow
+logs/
+plugins/__pycache__/
+airflow.db
+airflow-webserver.pid
+
+# dbt
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+
+# Data
+data/
+*.csv
+*.parquet
+!docs/**/*.csv
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+'@ | Out-File -FilePath ".gitignore" -Encoding utf8
