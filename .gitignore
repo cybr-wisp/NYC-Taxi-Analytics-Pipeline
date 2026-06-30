@@ -1,5 +1,4 @@
-@'
-# Secrets / credentials
+﻿# Secrets / credentials
 .env
 config/gcp-key.json
 config/*.json
@@ -36,4 +35,3 @@ data/
 .DS_Store
 .vscode/
 .idea/
-'@ | Out-File -FilePath ".gitignore" -Encoding utf8
